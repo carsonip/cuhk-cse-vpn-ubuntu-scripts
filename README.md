@@ -12,7 +12,9 @@ This script is for connecting to the CSE VPN (to be more accurate, vpn.cse.cuhk.
 
 For the first time connecting to VPN, please run:
 
+```shell
 sudo ./install.sh
+```
 
 The script will check and install the following packages:
 
@@ -54,7 +56,9 @@ If the scripts fail in step "Connect to the VPN server", or get frozen in step "
 
 If you find that you cannot access to the internet after using the scripts, you may try:
 
+```shell
 sudo ip route add default via __GATEWAY__ dev __DEVICE__
+```
 
 with __GATEWAY__ and __DEVICE__ be replaced by the gateway and device respectively, which could be found in the step "Get default device and gateway".
 
