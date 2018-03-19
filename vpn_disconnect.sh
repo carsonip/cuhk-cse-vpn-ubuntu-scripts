@@ -31,6 +31,10 @@ Step "Get original device and gateway"
     Message "Gateway: $GW"
 Done
 
+Step "Remove device ppp0"
+    ip link delete ppp0
+Done
+
 Step "Disconnect from the VPN server"
     echo "d" > /var/run/xl2tpd/l2tp-control
     sleep 1
@@ -40,6 +44,10 @@ Step "Restore default route"
     ip route del default > /dev/null 2>&1
     ip route add default via $GW dev $DEV > /dev/null 2>&1
     sed -i /137\.189\.192\.[36]/d /etc/resolv.conf
+Done
+
+Step "Remove device ppp0"
+    ip link delete ppp0
 Done
 
 Message "The connection should be disconnected."
