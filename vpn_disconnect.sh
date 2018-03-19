@@ -31,10 +31,6 @@ Step "Get original device and gateway"
     Message "Gateway: $GW"
 Done
 
-Step "Remove device ppp0"
-    ip link delete ppp0
-Done
-
 Step "Disconnect from the VPN server"
     echo "d" > /var/run/xl2tpd/l2tp-control
     sleep 1
