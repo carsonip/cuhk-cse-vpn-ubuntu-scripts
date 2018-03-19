@@ -42,6 +42,10 @@ Step "Restore default route"
     sed -i /137\.189\.192\.[36]/d /etc/resolv.conf
 Done
 
+Step "Remove device ppp0"
+    ip link delete ppp0
+Done
+
 Message "The connection should be disconnected."
 
 # vim: set tabstop=4 shiftwidth=4:

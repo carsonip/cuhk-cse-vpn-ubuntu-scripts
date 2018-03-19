@@ -37,6 +37,10 @@ Step "Get default device and gateway"
     Message "Gateway: $GW"
 Done
 
+Step "Remove device ppp0"
+    ip link delete ppp0
+Done
+
 Step "Add route for the VPN server"
     ip route add 137.189.88.231 via $GW dev $DEV > /dev/null 2>&1
 Done
