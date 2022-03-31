@@ -1,5 +1,7 @@
 # CUHK CSE VPN Script for Ubuntu 14.04+
 
+This repo is not actively maintained. Feel free to maintain your own fork.
+
 ## Background
 
 This script was originally written by [@nnkken](https://github.com/nnkken) and is now modified by [@carsonip](https://github.com/carsonip) to reflect the changes in the CUHK CSE VPN systems.
@@ -9,6 +11,8 @@ The original scripts are available [here](https://drive.google.com/file/d/0B7OCa
 ## Introduction
 
 This script is for connecting to the CSE VPN (to be more accurate, vpn.cse.cuhk.edu.hk) on Ubuntu 14.04.
+
+Please place the secret file `cse.secrets` under `conf/`.
 
 For the first time connecting to VPN, please run:
 
